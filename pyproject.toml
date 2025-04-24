@@ -1,0 +1,23 @@
+[project]
+name = "applyleave"
+version = "0.1.0"
+description = "applyleave using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.114.0,<1.0.0"
+]
+
+[project.scripts]
+applyleave = "applyleave.main:run"
+run_crew = "applyleave.main:run"
+train = "applyleave.main:train"
+replay = "applyleave.main:replay"
+test = "applyleave.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
