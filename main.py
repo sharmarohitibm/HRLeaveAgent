@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from apply_leave_crew import queryleave
+from apply_leave_crew_sqlite import queryleave
 import uvicorn
 
 app = FastAPI()
